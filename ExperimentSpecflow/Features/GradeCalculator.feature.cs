@@ -108,16 +108,13 @@ namespace ExperimentSpecflow.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableTheoryAttribute(DisplayName="ใส่ข้อมูลที่ได้คะแนนต่ำกว่า 60 จะต้องได้เกรด F")]
+        [Xunit.SkippableFactAttribute(DisplayName="ใส่ข้อมูลที่ได้คะแนน 60 จะต้องได้เกรด F")]
         [Xunit.TraitAttribute("FeatureTitle", "GradeCalculator")]
-        [Xunit.TraitAttribute("Description", "ใส่ข้อมูลที่ได้คะแนนต่ำกว่า 60 จะต้องได้เกรด F")]
-        [Xunit.InlineDataAttribute("30", "F", new string[0])]
-        [Xunit.InlineDataAttribute("60", "F", new string[0])]
-        [Xunit.InlineDataAttribute("51", "F", new string[0])]
-        public virtual void ใสขอมลทไดคะแนนตำกวา60จะตองไดเกรดF(string score, string expectedGrade, string[] exampleTags)
+        [Xunit.TraitAttribute("Description", "ใส่ข้อมูลที่ได้คะแนน 60 จะต้องได้เกรด F")]
+        public virtual void ใสขอมลทไดคะแนน60จะตองไดเกรดF()
         {
-            string[] tagsOfScenario = exampleTags;
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ใส่ข้อมูลที่ได้คะแนนต่ำกว่า 60 จะต้องได้เกรด F", null, exampleTags);
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ใส่ข้อมูลที่ได้คะแนน 60 จะต้องได้เกรด F", null, ((string[])(null)));
 #line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -142,29 +139,26 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 16
- testRunner.Given(string.Format("นักเรียนได้คะแนนสอบ \'{0}\' คะแนน", score), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("นักเรียนได้คะแนนสอบ \'60\' คะแนน", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 17
  testRunner.When("ทำการประเมินเกรด", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 18
- testRunner.Then(string.Format("ผลการประเมินจะต้องได้เกรด \'{0}\'", expectedGrade), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("ผลการประเมินจะต้องได้เกรด \'F\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableTheoryAttribute(DisplayName="ใส่ข้อมูลที่ได้คะแนนตั้งแต่ 91 ขึ้นไปจะต้องได้เกรด A")]
+        [Xunit.SkippableFactAttribute(DisplayName="ใส่ข้อมูลที่ได้คะแนน 70 จะต้องได้เกรด D")]
         [Xunit.TraitAttribute("FeatureTitle", "GradeCalculator")]
-        [Xunit.TraitAttribute("Description", "ใส่ข้อมูลที่ได้คะแนนตั้งแต่ 91 ขึ้นไปจะต้องได้เกรด A")]
-        [Xunit.InlineDataAttribute("91", new string[0])]
-        [Xunit.InlineDataAttribute("99", new string[0])]
-        [Xunit.InlineDataAttribute("100", new string[0])]
-        public virtual void ใสขอมลทไดคะแนนตงแต91ขนไปจะตองไดเกรดA(string score, string[] exampleTags)
+        [Xunit.TraitAttribute("Description", "ใส่ข้อมูลที่ได้คะแนน 70 จะต้องได้เกรด D")]
+        public virtual void ใสขอมลทไดคะแนน70จะตองไดเกรดD()
         {
-            string[] tagsOfScenario = exampleTags;
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ใส่ข้อมูลที่ได้คะแนนตั้งแต่ 91 ขึ้นไปจะต้องได้เกรด A", null, exampleTags);
-#line 26
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ใส่ข้อมูลที่ได้คะแนน 70 จะต้องได้เกรด D", null, ((string[])(null)));
+#line 20
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -187,14 +181,241 @@ this.ScenarioInitialize(scenarioInfo);
 #line 6
 this.FeatureBackground();
 #line hidden
-#line 27
- testRunner.Given(string.Format("นักเรียนได้คะแนนสอบ \'{0}\' คะแนน", score), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 21
+ testRunner.Given("นักเรียนได้คะแนนสอบ \'70\' คะแนน", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 28
+#line 22
  testRunner.When("ทำการประเมินเกรด", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 29
+#line 23
+ testRunner.Then("ผลการประเมินจะต้องได้เกรด \'D\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="ใส่ข้อมูลที่ได้คะแนน 80 จะต้องได้เกรด C")]
+        [Xunit.TraitAttribute("FeatureTitle", "GradeCalculator")]
+        [Xunit.TraitAttribute("Description", "ใส่ข้อมูลที่ได้คะแนน 80 จะต้องได้เกรด C")]
+        public virtual void ใสขอมลทไดคะแนน80จะตองไดเกรดC()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ใส่ข้อมูลที่ได้คะแนน 80 จะต้องได้เกรด C", null, ((string[])(null)));
+#line 25
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 26
+ testRunner.Given("นักเรียนได้คะแนนสอบ \'80\' คะแนน", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 27
+ testRunner.When("ทำการประเมินเกรด", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 28
+ testRunner.Then("ผลการประเมินจะต้องได้เกรด \'C\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="ใส่ข้อมูลที่ได้คะแนน 90 จะต้องได้เกรด B")]
+        [Xunit.TraitAttribute("FeatureTitle", "GradeCalculator")]
+        [Xunit.TraitAttribute("Description", "ใส่ข้อมูลที่ได้คะแนน 90 จะต้องได้เกรด B")]
+        public virtual void ใสขอมลทไดคะแนน90จะตองไดเกรดB()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ใส่ข้อมูลที่ได้คะแนน 90 จะต้องได้เกรด B", null, ((string[])(null)));
+#line 30
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 31
+ testRunner.Given("นักเรียนได้คะแนนสอบ \'90\' คะแนน", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 32
+ testRunner.When("ทำการประเมินเกรด", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 33
+ testRunner.Then("ผลการประเมินจะต้องได้เกรด \'B\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="ใส่ข้อมูลที่ได้คะแนน 95 จะต้องได้เกรด A")]
+        [Xunit.TraitAttribute("FeatureTitle", "GradeCalculator")]
+        [Xunit.TraitAttribute("Description", "ใส่ข้อมูลที่ได้คะแนน 95 จะต้องได้เกรด A")]
+        public virtual void ใสขอมลทไดคะแนน95จะตองไดเกรดA()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ใส่ข้อมูลที่ได้คะแนน 95 จะต้องได้เกรด A", null, ((string[])(null)));
+#line 35
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 36
+ testRunner.Given("นักเรียนได้คะแนนสอบ \'95\' คะแนน", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 37
+ testRunner.When("ทำการประเมินเกรด", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 38
  testRunner.Then("ผลการประเมินจะต้องได้เกรด \'A\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableTheoryAttribute(DisplayName="ใส่ข้อมูลที่ได้คะแนนเกิน 90 ขึ้นไปจะต้องได้เกรด A")]
+        [Xunit.TraitAttribute("FeatureTitle", "GradeCalculator")]
+        [Xunit.TraitAttribute("Description", "ใส่ข้อมูลที่ได้คะแนนเกิน 90 ขึ้นไปจะต้องได้เกรด A")]
+        [Xunit.InlineDataAttribute("91", new string[0])]
+        [Xunit.InlineDataAttribute("99", new string[0])]
+        [Xunit.InlineDataAttribute("100", new string[0])]
+        public virtual void ใสขอมลทไดคะแนนเกน90ขนไปจะตองไดเกรดA(string score, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ใส่ข้อมูลที่ได้คะแนนเกิน 90 ขึ้นไปจะต้องได้เกรด A", null, exampleTags);
+#line 40
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 41
+ testRunner.Given(string.Format("นักเรียนได้คะแนนสอบ \'{0}\' คะแนน", score), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 42
+ testRunner.When("ทำการประเมินเกรด", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 43
+ testRunner.Then("ผลการประเมินจะต้องได้เกรด \'A\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableTheoryAttribute(DisplayName="ใส่ข้อมูลที่ได้คะแนนไม่ถูกต้อง ระบบจะต้องแจ้งเตือนข้อผิดพลาด")]
+        [Xunit.TraitAttribute("FeatureTitle", "GradeCalculator")]
+        [Xunit.TraitAttribute("Description", "ใส่ข้อมูลที่ได้คะแนนไม่ถูกต้อง ระบบจะต้องแจ้งเตือนข้อผิดพลาด")]
+        [Xunit.TraitAttribute("Category", "exception")]
+        [Xunit.InlineDataAttribute("-65", new string[0])]
+        [Xunit.InlineDataAttribute("120", new string[0])]
+        public virtual void ใสขอมลทไดคะแนนไมถกตองระบบจะตองแจงเตอนขอผดพลาด(string score, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "exception"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ใส่ข้อมูลที่ได้คะแนนไม่ถูกต้อง ระบบจะต้องแจ้งเตือนข้อผิดพลาด", null, @__tags);
+#line 52
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 53
+ testRunner.Given(string.Format("นักเรียนได้คะแนนสอบ \'{0}\' คะแนน", score), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 54
+ testRunner.When("ทำการประเมินเกรด", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 55
+ testRunner.Then("ระบบจะต้องแจ้งเตือนข้อผิดพลาด", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

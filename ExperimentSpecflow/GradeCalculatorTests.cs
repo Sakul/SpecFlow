@@ -148,7 +148,8 @@ namespace ExperimentSpecflow
         public void Input_Negative_65_Score_Then_System_Must_Throw_An_Exception()
         {
             sut.Invoking(it => it.GetGradeByScore(-65))
-                .Should().Throw<ArgumentException>();
+                .Should()
+                .Throw<ArgumentException>();
         }
 
         // ใส่ข้อมูลที่ได้คะแนน 120 ระบบจะต้องแจ้งเตือนข้อผิดพลาด
@@ -156,7 +157,8 @@ namespace ExperimentSpecflow
         public void Input_120_Score_Then_System_Must_Throw_An_Exception()
         {
             sut.Invoking(it => it.GetGradeByScore(120))
-                .Should().Throw<ArgumentException>();
+                .Should()
+                .Throw<ArgumentException>();
         }
     }
 }
