@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradeShared", "GradeShared\GradeShared.csproj", "{2AC67A17-0243-47AC-9123-8C3315552464}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExperimentSpecflow", "ExperimentSpecflow\ExperimentSpecflow.csproj", "{CC225704-71D5-4AAD-A91A-9E9BA04FDDF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AC67A17-0243-47AC-9123-8C3315552464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC67A17-0243-47AC-9123-8C3315552464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC67A17-0243-47AC-9123-8C3315552464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC67A17-0243-47AC-9123-8C3315552464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC225704-71D5-4AAD-A91A-9E9BA04FDDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC225704-71D5-4AAD-A91A-9E9BA04FDDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC225704-71D5-4AAD-A91A-9E9BA04FDDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC225704-71D5-4AAD-A91A-9E9BA04FDDF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7183CE25-16DD-4EC7-B08F-DF63B218EB26}
+	EndGlobalSection
+EndGlobal
